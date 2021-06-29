@@ -21,5 +21,4 @@
     <fx:include source="MainControls.fxml" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="2"/>
     <fx:include source="Joystick.fxml" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="0"
                 GridPane.valignment="CENTER"/>
-    <fx:include source="testing.fxml"  GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
 </GridPane>
