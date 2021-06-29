@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="1000.0" prefHeight="600.0"
+          prefWidth="1005.0" style="-fx-background-color: #cfcff1" xmlns="http://javafx.com/javafx/11.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainApp">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="196.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="653.0" minWidth="10.0" prefWidth="470.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.0" minWidth="10.0" prefWidth="333.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="409.0" minHeight="0.0" prefHeight="276.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="333.0" minHeight="10.0" prefHeight="163.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="278.0" minHeight="10.0" prefHeight="161.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <fx:include source="ColumnList.fxml" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0"
+                GridPane.rowSpan="2"/>
+    <fx:include source="MainControls.fxml" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="2"/>
+    <fx:include source="Joystick.fxml" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="0"
+                GridPane.valignment="CENTER"/>
+    <fx:include source="testing.fxml"  GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.halignment="CENTER"/>
+</GridPane>

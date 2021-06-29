@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainControls">
+    <stylesheets>
+        <URL value="@boxStyle.css" />
+    </stylesheets>
+    <children>
+      <VBox alignment="CENTER" prefHeight="244.0" prefWidth="950.0" styleClass="border-pane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="114.0" prefWidth="940.0">
+               <children>
+                    <Button fx:id="OpenButton" mnemonicParsing="false" onAction="#handleOpenButton" prefHeight="55.0" prefWidth="119.0" text="Open" />
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="114.0" prefWidth="82.0" />
+                    <ButtonBar buttonMinWidth="0.0" prefHeight="140.0" prefWidth="280.0">
+                        <buttons>
+                            <Button mnemonicParsing="false" text="⏮" />
+                            <Button layoutX="458.0" layoutY="25.0" mnemonicParsing="false" text="⏪" />
+                            <Button layoutX="458.0" layoutY="25.0" mnemonicParsing="false" text="⏹" />
+                            <Button layoutX="458.0" layoutY="25.0" mnemonicParsing="false" text="▶" />
+                            <Button layoutX="458.0" layoutY="25.0" mnemonicParsing="false" text="⏸" />
+                            <Button layoutX="458.0" layoutY="25.0" mnemonicParsing="false" text="⏩" />
+                            <Button layoutX="458.0" layoutY="25.0" mnemonicParsing="false" text="⏭" />
+                        </buttons>
+                    </ButtonBar>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="114.0" prefWidth="74.0" />
+                    <Label alignment="CENTER" prefHeight="32.0" prefWidth="73.0" text="Play speed:" textAlignment="CENTER" />
+                    <TextField fx:id="playSpeedTextField" prefHeight="25.0" prefWidth="54.0" text="1.0">
+                        <font>
+                            <Font name="Arial" size="12.0" />
+                        </font>
+                    </TextField>
+                  <Separator opacity="0.0" orientation="VERTICAL" prefHeight="114.0" prefWidth="61.0" />
+                    <Label fx:id="timeLabel" alignment="CENTER" prefHeight="32.0" prefWidth="114.0" text="Label" textAlignment="CENTER">
+                        <font>
+                            <Font name="Arial" size="12.0" />
+                        </font>
+                    </Label>
+               </children>
+            </HBox>
+            <Separator opacity="0.92" prefHeight="46.0" prefWidth="940.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                    <Slider prefHeight="14.0" prefWidth="894.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+TODO
+
+Make Joystick be able to move.
+
+
+
+Make list of attributes:
+List of text fields, maybe add a scroll bar if needed (how to make such list should be online)
+
+
+Make a similar list for statistics about flight details and shit, perhaps even use the same fxml for both.
+
+
+Make a scrollable list of selectable elements that has lambda function on click (to the list).
+
+
+
+
+Make the weird ass map.
